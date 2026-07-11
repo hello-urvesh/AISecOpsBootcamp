@@ -1,0 +1,27 @@
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: firstmissions-ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama-data:/root/.ollama
+    restart: unless-stopped
+
+  app:
+    build: ./app
+    container_name: firstmissions-app
+    environment:
+      OLLAMA_URL: "http://ollama:11434"
+      PROGRESS_PATH: "/data/progress.json"
+    volumes:
+      - app-data:/data
+    depends_on:
+      - ollama
+    ports:
+      - "8501:8501"
+    restart: unless-stopped
+
+volumes:
+  ollama-data:
+  app-data:
