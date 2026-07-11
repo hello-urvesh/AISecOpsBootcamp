@@ -98,8 +98,3 @@ real money, and no real keycode. The names and secrets are made up for practice.
 The Overdraft Heist shows that when an AI can take real actions, tricking it with
 words becomes a way to cause real harm. The defense is to treat everything a user
 sends as untrusted data, keep hard limits in code, and review sensitive actions.
-
-The Loose Lipped Concierge shows that a secret placed inside an AI's instructions
-is not truly safe. A determined user can often talk it out, and hiding a leak in a
-disguised form can slip past filters. The defense is to keep real secrets out of
-the AI entirely and to check outputs, not just inputs.
