@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Local secrets and environment
+.env
+.streamlit/secrets.toml
+
+# Runtime output
+data/logs/*.jsonl
+!data/logs/.gitkeep
+outputs/
+results/
+screenshots/
+
+# IDE and OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
