@@ -1,8 +1,0 @@
-requests==2.34.2
-PyYAML==6.0.3
-jsonschema==4.26.0
-sigma-cli==3.1.0
-pySigma-backend-elasticsearch==2.1.0
-pytest==8.4.2
-python-evtx==0.8.1
-streamlit==1.59.1

@@ -1,1 +1,0 @@
-((process.executable:(*\\powershell.exe OR *\\pwsh.exe)) AND (process.command_line:(*\ \-e\ * OR *\ \-enc\ * OR *\ \-encodedcommand\ *)) AND (process.command_line:(*SQBuAHYAbwBrAGUALQ* OR *kAbgB2AG8AawBlAC0A* OR *JAG4AdgBvAGsAZQAtA* OR *SW52b2tlL* OR *ludm9rZS* OR *JbnZva2Ut*))) AND (NOT (process.parent.executable:(*\\CcmExec.exe OR *\\IntuneManagementExtension.exe)))
